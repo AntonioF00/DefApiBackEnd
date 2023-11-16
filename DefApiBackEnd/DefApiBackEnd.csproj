@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Assets\" />
+    <Folder Include="Core\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewsModel\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
 </Project>
