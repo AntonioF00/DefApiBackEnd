@@ -1,6 +1,11 @@
+
+### Local variable
 @DefApiBackEnd.Api_HostAddress = http://localhost:5166
+
+
+### API requests
 
 GET {{DefApiBackEnd.Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
+
