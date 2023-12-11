@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Enums\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DefApiBackEnd.Api\DefApiBackEnd.Api.csproj" />
   </ItemGroup>
 
