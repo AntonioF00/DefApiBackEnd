@@ -11,4 +11,8 @@
     <Folder Include="Settings\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DefApiBackEnd.Dto\DefApiBackEnd.Dto.csproj" />
+  </ItemGroup>
+
 </Project>

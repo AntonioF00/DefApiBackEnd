@@ -11,4 +11,8 @@
     <Folder Include="Enums\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DefApiBackEnd.Api\DefApiBackEnd.Api.csproj" />
+  </ItemGroup>
+
 </Project>
