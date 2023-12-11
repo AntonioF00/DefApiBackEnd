@@ -5,7 +5,6 @@ namespace DefApiBackEnd.Dto.Models
 {
     public class Configuration
     {
-
         private string _connectionString {  get; set; }
         private ConnectionTypes _connectionTypes { get; set; }
         private QueryStrings _queryString { get; set; }

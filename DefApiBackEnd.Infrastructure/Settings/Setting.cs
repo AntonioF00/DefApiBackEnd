@@ -1,6 +1,5 @@
 ﻿
 using DefApiBackEnd.Dto.Models;
-using DefApiBackEnd.Utils;
 using System.IO.Pipelines;
 using System.Xml.Serialization;
 
@@ -10,7 +9,7 @@ namespace DefApiBackEnd.Infrastructure.Settings
     {
         private static Setting _istance;
         private Configuration _configuration;
-        private  EncryptionHelper _encryptionHelper;
+
 
         public Configuration Configuration { get => _configuration; set => _configuration = value; }
         public static Setting Istance
@@ -26,7 +25,7 @@ namespace DefApiBackEnd.Infrastructure.Settings
         }
         private Setting()
         {
-            _encryptionHelper = new EncryptionHelper();
+
             Deserialize(@"Configuration.xml");
 
         }
@@ -37,7 +36,6 @@ namespace DefApiBackEnd.Infrastructure.Settings
             string ret = string.Empty;
             using (Stream reader = new FileStream(filename, FileMode.Open))
             {
-                ret = _encryptionHelper.Encrypt(reader.ToString());
                 i = (Configuration)serializer.Deserialize(reader);
             }
             Configuration = i;

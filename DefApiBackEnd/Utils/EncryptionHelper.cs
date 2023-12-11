@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace DefApiBackEnd.Utils
+namespace DefApiBackEnd
 {
     public  class EncryptionHelper
     {

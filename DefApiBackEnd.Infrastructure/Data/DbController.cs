@@ -10,7 +10,7 @@ namespace DefApiBackEnd.Infrastructure.Data
 
         public DbController()
         {
-            _connection = ConnectionFactory.GetConnection(Setting.Istance.Configuration.c, Setting.Istance.Configuration.ConnectionString);
+            _connection = ConnectionFactory.GetConnection(Setting.Istance.Configuration.ConnectionTypes, Setting.Istance.Configuration.ConnectionString);
         }
         public void ExecuteQuery1(object datas)
         {
